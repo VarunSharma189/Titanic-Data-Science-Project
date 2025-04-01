@@ -13,74 +13,50 @@ The dataset used in this project is the Titanic dataset from Kaggle, which conta
 - Matplotlib & Seaborn (Data Visualization)
 - Jupyter Notebook / Python Scripts
 
-📊 Steps Performed
-1️⃣ Data Collection
-Loaded train.csv and test.csv using pandas.
+## 🚀 Project Workflow
 
-Checked data types, missing values, and basic statistics.
+### **Step 1: Data Preprocessing**
+- Loaded the dataset and explored missing values.
+- Handled missing values by filling them with median or mode.
+- Dropped irrelevant columns (`PassengerId`, `Name`, `Ticket`, `Cabin`).
 
-2️⃣ Exploratory Data Analysis (EDA)
-Visualized distributions of Survived, Pclass, Age, Sex, etc.
+### **Step 2: Feature Engineering**
+- Converted categorical features (`Sex`, `Embarked`) into numerical form.
+- One-hot encoded the `Embarked` column.
+- Ensured all data was in numerical format for model training.
 
-Checked correlations between features.
+### **Step 3: Feature Selection**
+- Selected relevant features such as `Pclass`, `Sex`, `Age`, `SibSp`, `Parch`, `Fare`, `Embarked_Q`, and `Embarked_S`.
+- Removed highly correlated and redundant features.
 
-Analyzed missing values in Age, Cabin, and Embarked.
+### **Step 4: Model Selection & Training**
+- Trained and evaluated multiple models:
+  - **Logistic Regression**
+  - **Random Forest** ✅ (Chosen model)
+  - **Support Vector Machine (SVM)**
 
-3️⃣ Data Preprocessing
-Handled missing values:
+### **Step 5: Hyperparameter Tuning**
+- Tuned the Random Forest model using Grid Search to improve accuracy.
+- Best parameters found: `{ 'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 10, 'n_estimators': 200 }`
 
-Age → Filled with median age.
+### **Step 6: Model Evaluation**
+- Evaluated model performance using:
+  - **Accuracy Score**
+  - **Precision, Recall, F1-score**
+  - **Confusion Matrix**
 
-Embarked → Filled with most common port.
+### **Step 7: Error Analysis**
+- Analyzed misclassified samples.
+- Identified patterns in incorrect predictions to improve model performance.
 
-Cabin → Dropped due to excessive missing data.
+### **Step 8: Feature Importance Analysis**
+- Used feature importance scores from the Random Forest model.
+- Visualized the most influential features for survival prediction.
 
-Converted categorical data (Sex, Embarked) using One-Hot Encoding.
-
-Dropped irrelevant columns (Name, Ticket, PassengerId).
-
-4️⃣ Feature Selection
-Selected important features:
-
-Pclass, Sex, Age, SibSp, Parch, Fare, Embarked_Q, Embarked_S.
-
-5️⃣ Model Selection
-Tested different algorithms:
-
-✅ Logistic Regression
-
-✅ Random Forest (Final Model)
-
-✅ Support Vector Machine (SVM)
-
-6️⃣ Model Training & Evaluation
-Split data into train (80%) and test (20%).
-
-Trained models and evaluated performance using:
-
-Accuracy, Precision, Recall, F1-score, Confusion Matrix.
-
-Final Random Forest Model Accuracy: 81.01%.
-
-7️⃣ Hyperparameter Tuning
-Tuned n_estimators, max_depth, min_samples_split, etc., using GridSearchCV.
-
-Optimized Model Accuracy: 83.24% 🚀.
-
-8️⃣ Error Analysis
-Analyzed misclassified samples to find common patterns.
-
-9️⃣ Feature Importance
-Plotted feature importance from the trained Random Forest model.
-
-📌 Results & Insights
-Model	Accuracy	Precision	Recall	F1-Score
-Logistic Regression	81.01%	0.81	0.80	0.80
-Random Forest (Tuned)	83.24%	0.83	0.82	0.82
-SVM	78.21%	0.78	0.77	0.77
-The Random Forest model performed best after tuning.
-
-Gender, Fare, Pclass, and Age were the most important survival predictors.
+## 🎯 Results
+- **Final Model: Random Forest (Tuned)**
+- **Final Accuracy: 83.24%**
+- **Confusion Matrix & Classification Report showed improved precision and recall**
 
 ## 📌 How to Run the Project
 1. Clone this repository:
