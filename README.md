@@ -59,11 +59,16 @@ The dataset used in this project is the Titanic dataset from Kaggle, which conta
 - **Confusion Matrix & Classification Report showed improved precision and recall**
 
 ## 📌 How to Run the Project
-   Clone this repository:
+  1. Clone this repository:
    ```bash
    git clone https://github.com/VarunSharma189/Titanic-Data-Science-Project.git
    ```
-
+  2. Install dependencies
+   ```bash
+   pip install pandas numpy scikit-learn matplotlib seaborn joblib
+   ```
+  3. Run the python scripts
+     
 ## 📌 Future Enhancements
 - Try deep learning models like Neural Networks.
 - Explore advanced feature engineering techniques.
