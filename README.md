@@ -59,22 +59,9 @@ The dataset used in this project is the Titanic dataset from Kaggle, which conta
 - **Confusion Matrix & Classification Report showed improved precision and recall**
 
 ## 📌 How to Run the Project
-1. Clone this repository:
+   Clone this repository:
    ```bash
-   git clone https://github.com/VarunSharma189/Titanic-Survival-Prediction.git
-   cd Titanic-Survival-Prediction
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the Jupyter Notebook or Python scripts:
-   ```bash
-   jupyter notebook
-   ```
-   OR
-   ```bash
-   python main.py
+   git clone https://github.com/VarunSharma189/Titanic-Data-Science-Project.git
    ```
 
 ## 📌 Future Enhancements
