@@ -61,7 +61,7 @@ The dataset used in this project is the Titanic dataset from Kaggle, which conta
 ## 📌 How to Run the Project
   1. Clone this repository:
    ```bash
-   git clone https://github.com/VarunSharma189/Titanic-Data-Science-Project.git
+   git clone https://github.com/VarunSharma189/Titanic-Data-Science-Project
    ```
   2. Install dependencies
    ```bash
